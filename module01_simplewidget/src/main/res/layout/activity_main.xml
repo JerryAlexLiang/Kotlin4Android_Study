@@ -20,6 +20,14 @@
             android:text="按钮Button"
             android:textAllCaps="false"/>
 
+        <Button
+            android:id="@+id/btn_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="复选框Checkbox"
+            android:textAllCaps="false"/>
+
 
     </LinearLayout>
 

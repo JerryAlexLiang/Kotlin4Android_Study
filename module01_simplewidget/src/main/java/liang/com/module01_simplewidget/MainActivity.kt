@@ -15,5 +15,7 @@ class MainActivity : AppCompatActivity() {
         toast("Kotlin 4 Android")
 
         btn_button.setOnClickListener { startActivity(Intent(this, ButtonActivity::class.java)) }
+
+        btn_checkbox.setOnClickListener { startActivity(Intent(this, CheckboxActivity::class.java)) }
     }
 }
