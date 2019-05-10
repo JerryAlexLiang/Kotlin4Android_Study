@@ -19,7 +19,7 @@ class ButtonActivity : AppCompatActivity(), View.OnClickListener, View.OnLongCli
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_button)
 
-        title="按钮Button"
+        title = "按钮Button"
 
         /**
          * 1、Button的匿名函数方式响应事件
@@ -55,6 +55,7 @@ class ButtonActivity : AppCompatActivity(), View.OnClickListener, View.OnLongCli
         btn_interface.setOnClickListener(this)
 
         btn_interface_long.setOnLongClickListener(this)
+
     }
 
     /**

@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="按钮Button"
-            android:textAllCaps="false"/>
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btn_checkbox"
@@ -26,7 +26,61 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="复选框Checkbox"
-            android:textAllCaps="false"/>
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnIntentActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="传送配对字段数据-跳转Activity"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnParcelableActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="传送配对序列化数据-跳转Activity"
+            android:textAllCaps="false" />
+
+        <EditText
+            android:id="@+id/editContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="请输入对话" />
+
+        <TextView
+            android:id="@+id/tv_send_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#ff00"/>
+
+        <TextView
+            android:id="@+id/tv_receive_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#00f"/>
+
+        <Button
+            android:id="@+id/btnStartActivityForResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="处理返回数据-跳转Activity"
+            android:textAllCaps="false" />
 
 
     </LinearLayout>
