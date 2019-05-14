@@ -1,11 +1,15 @@
 package liang.com.module01_simplewidget
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.View
 import kotlinx.android.synthetic.main.activity_intent.*
 import liang.com.module01_simplewidget.bean.StudentBean
+import org.jetbrains.anko.toast
 
 class IntentActivity : AppCompatActivity() {
 
@@ -45,20 +49,38 @@ class IntentActivity : AppCompatActivity() {
         val bundle2 = intent.extras
         val messageInfo = bundle2.getString("message")
         if (messageInfo != null) {
-            tv_receive_message_two.text = messageInfo
+            title = "Intent传递并处理返回数据"
+            tv_receive_message_two.text = "对方说: $messageInfo"
+        }
 
-            var responseMessage = editContentResult.text.toString().trim()
-            tv_send_message_two.text = responseMessage
-
-            if (responseMessage.isNotEmpty()) {
-                intent.putExtra("responseMessage", responseMessage)
-                //调用setResult方法表示携带应答参数返回到上一个页面
-                setResult(Activity.RESULT_OK, intent)
-                //返回上一页
-                finish()
+        editContentResult.addTextChangedListener(object : TextWatcher {
+            override fun afterTextChanged(s: Editable) {
+                val responseMessage = s.toString()
+                tv_send_message_two.text = "我说: $responseMessage"
             }
 
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+            }
+
+        })
+
+        btnSetResult.setOnClickListener {
+            var responseMessage = editContentResult.text.toString().trim()
+            if (responseMessage.isNotEmpty()) {
+                val intent2 = Intent()
+                intent2.putExtra("responseMessage", responseMessage)
+                //调用setResult方法表示携带应答参数返回到上一个页面
+                setResult(Activity.RESULT_OK, intent2)
+                //返回上一页
+                finish()
+            } else {
+                toast("请输入内容!")
+            }
         }
+
 
     }
 }

@@ -4,6 +4,8 @@ import android.app.Activity
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.text.format.DateUtils
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
@@ -32,6 +34,20 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btnIntentActivity.setOnClickListener(this)
         btnParcelableActivity.setOnClickListener(this)
         btnStartActivityForResult.setOnClickListener(this)
+
+        editContent.addTextChangedListener(object : TextWatcher {
+            override fun afterTextChanged(s: Editable) {
+                val edContent = s.toString()
+                tv_send_message.text = "我说: $edContent"
+            }
+
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+            }
+
+        })
     }
 
     override fun onClick(v: View) {
@@ -57,7 +73,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             //数据跳转回传
             R.id.btnStartActivityForResult -> {
                 var editMessage = editContent.text.toString().trim()
-                tv_send_message.text = editMessage
                 if (editMessage.isNotEmpty()) {
                     startActivityForResult<IntentActivity>(0, Pair("message", editMessage))
                 } else {
@@ -79,7 +94,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 if (data != null) {
                     //获取到下一个页面的返回参数(应答参数)
                     val responseMessage = data.extras.getString("responseMessage")
-                    tv_receive_message.text = responseMessage
+                    tv_receive_message.text = "对方说: $responseMessage"
                 }
             }
         }
