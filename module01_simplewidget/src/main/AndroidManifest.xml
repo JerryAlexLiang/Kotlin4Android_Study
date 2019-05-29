@@ -11,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".IntentActivity"></activity>
+        <activity android:name=".AlertDialogActivity"></activity>
+        <activity android:name=".IntentActivity" />
         <activity android:name=".CheckboxRadioButtonActivity" />
         <activity android:name=".ButtonActivity" />
         <activity android:name=".MainActivity">

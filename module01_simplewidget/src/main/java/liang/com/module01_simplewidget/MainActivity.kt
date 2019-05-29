@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btnIntentActivity.setOnClickListener(this)
         btnParcelableActivity.setOnClickListener(this)
         btnStartActivityForResult.setOnClickListener(this)
+        btnAlertDialog.setOnClickListener(this)
 
         editContent.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable) {
@@ -79,6 +80,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     toast("请输入对话信息!")
                 }
             }
+
+            R.id.btnAlertDialog -> startActivity<AlertDialogActivity>()
 
             else -> ""
 

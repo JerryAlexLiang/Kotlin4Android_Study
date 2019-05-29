@@ -82,6 +82,14 @@
             android:text="处理返回数据-跳转Activity"
             android:textAllCaps="false" />
 
+        <Button
+            android:id="@+id/btnAlertDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="AlertDialog"
+            android:textAllCaps="false" />
+
 
     </LinearLayout>
 
