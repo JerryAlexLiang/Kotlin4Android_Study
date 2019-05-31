@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SpinnerActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tv_spinner_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:text="请选择你喜欢的明星"
+            android:textSize="17sp" />
+
+        <!--android:spinnerMode="dialog"
+        //prompt属性只有在dialog状态才有用-->
+        <Spinner
+            android:id="@+id/sp_dialog_kotlin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/tv_spinner_title"
+            android:gravity="left|center"
+            android:spinnerMode="dialog"
+            tools:ignore="RtlHardcoded" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_spinner_title_two"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:text="请选择你喜欢的明星"
+            android:textSize="17sp" />
+
+        <!--android:spinnerMode="dialog"
+        //prompt属性只有在dialog状态才有用-->
+        <Spinner
+            android:id="@+id/sp_dropdown_kotlin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/tv_spinner_title_two"
+            android:gravity="left|center"
+            android:spinnerMode="dropdown"
+            tools:ignore="RtlHardcoded" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/tv_spinner_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:text="请选择你喜欢的明星"
+            android:textSize="17sp" />
+
+
+        <TextView
+            android:id="@+id/tv_spinner_anko"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20dp"
+            android:layout_toEndOf="@+id/tv_spinner_dialog"
+            android:drawableEnd="@drawable/icon_arrow_down"
+            android:gravity="center"
+            android:textColor="#00f"
+            android:textSize="17sp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_submit_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:text="提交1" />
+
+    <Button
+        android:id="@+id/btn_submit_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:text="提交2" />
+
+    <Button
+        android:id="@+id/btn_submit_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:text="提交3" />
+
+</LinearLayout>

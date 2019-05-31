@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="liang.com.module01_simplewidget">
+    package="com.arcvideo.snapshot.module2_complexwidget">
 
     <application
         android:allowBackup="true"
@@ -11,11 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ListViewActivity"></activity>
-        <activity android:name=".AlertDialogActivity" />
-        <activity android:name=".IntentActivity" />
-        <activity android:name=".CheckboxRadioButtonActivity" />
-        <activity android:name=".ButtonActivity" />
+        <activity android:name=".SpinnerActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

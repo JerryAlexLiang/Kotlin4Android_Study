@@ -1,1 +1,1 @@
-include ':module01_simplewidget', ':ecommerceapp4kotlin', ':simple'
+include ':module01_simplewidget', ':ecommerceapp4kotlin', ':module2_complexwidget', ':kotlin_complex', ':java_complex'
