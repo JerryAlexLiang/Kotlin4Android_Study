@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         title = "复杂控件"
 
         btnSpinner.setOnClickListener(this)
+        btnListView.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -23,6 +24,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btnSpinner -> {
                 startActivity<SpinnerActivity>()
             }
+
+            R.id.btnListView -> startActivity<ListViewActivity>()
         }
 
     }
