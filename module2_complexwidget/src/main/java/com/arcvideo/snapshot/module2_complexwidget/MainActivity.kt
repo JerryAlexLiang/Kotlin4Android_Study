@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         btnSpinner.setOnClickListener(this)
         btnListView.setOnClickListener(this)
+        btnRecyclerView.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -26,6 +27,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
 
             R.id.btnListView -> startActivity<ListViewActivity>()
+
+            R.id.btnRecyclerView -> startActivity<RecyclerViewActivity>()
         }
 
     }

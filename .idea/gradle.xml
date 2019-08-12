@@ -8,7 +8,6 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/ecommerceapp4kotlin" />
             <option value="$PROJECT_DIR$/java_complex" />
             <option value="$PROJECT_DIR$/kotlin_complex" />
             <option value="$PROJECT_DIR$/module01_simplewidget" />
