@@ -11,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".RecyclerViewActivity"></activity>
+        <activity android:name=".TabViewPagerActivity"></activity>
+        <activity android:name=".RecyclerViewActivity" />
         <activity android:name=".ListViewActivity" />
         <activity android:name=".SpinnerActivity" />
         <activity android:name=".MainActivity">
