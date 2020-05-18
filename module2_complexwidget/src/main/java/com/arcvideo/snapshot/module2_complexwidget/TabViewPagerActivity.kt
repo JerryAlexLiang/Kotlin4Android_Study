@@ -1,10 +1,10 @@
 package com.arcvideo.snapshot.module2_complexwidget
 
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.support.design.widget.TabLayout
-import android.support.v4.app.Fragment
-import android.support.v4.view.ViewPager
+import com.google.android.material.tabs.TabLayout
+import androidx.fragment.app.Fragment
+import androidx.viewpager.widget.ViewPager
 import kotlinx.android.synthetic.main.activity_tab_view_pager.*
 
 /**
@@ -28,7 +28,7 @@ class TabViewPagerActivity : AppCompatActivity() {
 //    }
 
     private var titleList = ArrayList<String>()
-    private var fragmentList = ArrayList<Fragment>()
+    private var fragmentList = ArrayList<androidx.fragment.app.Fragment>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

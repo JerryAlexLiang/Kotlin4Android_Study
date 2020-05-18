@@ -1,7 +1,7 @@
 package com.arcvideo.snapshot.module2_complexwidget
 
 import android.content.Context
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,7 +12,7 @@ import android.widget.TextView
  * 描述: Kotlin - RecyclerView - 适配器
  * 作者: liangyang   RecyclerView.Adapter<KotlinRecycleAdapter.MyHolder>
  */
-class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
+class RecyclerViewAdapter : androidx.recyclerview.widget.RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
 
     private var dataList: ArrayList<String>? = null
     private var mContext: Context? = null
@@ -54,7 +54,7 @@ class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolde
 
     }
 
-    inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class MyViewHolder(itemView: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(itemView) {
         var mContextTv: TextView = itemView.findViewById(R.id.tv_content)
     }
 

@@ -1,7 +1,7 @@
 package com.arcvideo.snapshot.module2_complexwidget
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_list_view.*
 import org.jetbrains.anko.toast
 import java.util.*

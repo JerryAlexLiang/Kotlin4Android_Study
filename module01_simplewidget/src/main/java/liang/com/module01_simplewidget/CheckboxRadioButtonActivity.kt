@@ -1,7 +1,7 @@
 package liang.com.module01_simplewidget
 
 import android.annotation.SuppressLint
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_checkbox_radiobutton.*
 import org.jetbrains.anko.toast

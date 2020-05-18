@@ -2,7 +2,7 @@ package com.arcvideo.snapshot.module2_complexwidget
 
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -16,7 +16,7 @@ import android.util.Log.e as e1
  * 描述: 利用伴生对象定义获取碎片实例的静态方法
  * 作者: liangyang
  */
-class TabViewPagerFragment : Fragment() {
+class TabViewPagerFragment : androidx.fragment.app.Fragment() {
 
     private var fragmentContent: String? = null
     private var fragmentFlag: Int = 0

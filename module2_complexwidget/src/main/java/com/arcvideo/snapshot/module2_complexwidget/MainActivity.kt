@@ -1,6 +1,6 @@
 package com.arcvideo.snapshot.module2_complexwidget
 
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
